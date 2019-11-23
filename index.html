@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+        integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+<h1 class="fas fa-newspaper">New York Times Search</h1>
+    </header>
+    <div class="container">
+        <div class="search-header"> 
+            <h3 class="fas fa-newspaper">Search Parameters</h3>
+        
+            <div id="search-params">
+            <span>Search Term:</span><br>
+            <input class="params" id="terms" type="text"><br>
+            <span>Number of Records to Retrieve:</span><br>
+            <select class="params" id="number-article">
+                <option value="1">1</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+            </select><br>
+            <span>Start Year (Optional):</span><br>
+            <input  type="text" class="params" id="start-year"><br>
+            <span>End Year (Optional):</span><br>
+            <input type="text" class="params" id="end-year"><br>
+            <button id="search" value="search" class="fas fa-search">Search</button>
+            <button id="clear" value="clear" class="fas fa-trash-alt">Clear</button>
+           </div>
+        
+        </div>
+
+        <div class="search-header">
+            <h3 class="fas fa-calendar-alt">Top Articles</h3>
+            <div id="top-articles">
+                <!-- ARTICLES GO HERE -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
